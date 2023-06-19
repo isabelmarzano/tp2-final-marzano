@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Work+Sans:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+
+}
+
+nav,
+header,
+main
+
+ {
+    width: 100vw;
+    padding: 0 8.33vw;
+}
+
+section, video {width: 100%;}
+
+
+
+header {
+    height: 62vh;
+    text-align: center;
+}
+
+/*mostrar es la clase que utilizamos 
+en el código de js*/
+.mostrar {
+
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 19vh;
+    left: 0vw;
+    background-color: black;
+    width: 100vw;
+    padding: 2vw;
+
+
+
+}
+
+
+nav {
+    color: #cec3c1;
+    background-color: #3f220f;
+    height: 19vh;
+    padding: 0 8.33vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+
+}
+
+nav div {
+    width: 24%;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+nav a,
+nav h1,
+header h3,
+header h1 {
+
+    line-height: 125%;
+    vertical-align: top;
+    font-size: 40px;
+
+
+}
+
+
+
+header h3 {
+    color: #A18276;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 16px;
+
+
+}
+
+main section div {
+    width: 45.83%;
+}
+
+section div img {
+    width: 100%;
+}
+
+main  section:first-child {
+justify-content: space-between;
+display: flex;
+
+}
+
+
+
+nav h1 {
+    font-weight: 500;
+    margin: 0;
+}
+
+header h1 {
+    font-family: 'Crimson Text', serif;
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+header p,
+nav a,
+header a {
+    font-size: 20px;
+}
+
+nav a,
+header a {
+
+    color: #cec3c1;
+
+}
+
+header a {
+    background-color: #A18276;
+    text-transform: capitalize;
+}
+
+
+nav span {
+    display: none;
+}
+
+/*lo hago desaparecer*/
+
+
+.icon-menu,
+.icon-icono-1,
+.icon-icono-2 {
+    /*
+    color: red;*/
+    font-size: 6vw;
+
+}
+
+.icon-menu:hover {
+    color: rgba(0, 0, 255, 0.5);
+    cursor: pointer;
+    /*implementamos la mano*/
+}
+
+
+
+
+@media(max-width:992px) {
+
+
+    nav div {
+        width: 40%;
+    }
+
+
+}
+
+
+
+
+@media (max-width: 768px) {
+
+
+    nav div {
+        display: none;
+    }
+
+    /*lo hago desaparecer*/
+
+    nav span {
+        display: inline;
+    }
+
+    /*lo vuelo a mostrar*/
+
+
+}
